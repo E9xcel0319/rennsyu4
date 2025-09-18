@@ -1,0 +1,472 @@
+/* -------------------------------------------- */
+/*  ▼ 全幅共通/スマホ幅で適用するCSS ▼
+/* -------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 0.25rem;
+}
+
+.container {
+    max-width: calc(1200px + 1.5rem + 1.5rem);
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-sizing: content-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-all-row {
+    flex-direction: row;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.text-white,
+.card .text-white {
+    color: #FFFFFF;
+}
+
+.text-white,
+.card2 .text-white {
+    color: #FFFFFF;
+}
+
+.text-orange {
+    color: #F15A24;
+}
+
+.text-green {
+    color: #669900;
+}
+
+a.btn-more {
+    display: inline-block;
+    background-color: #F15A24;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    border-radius: 18px;
+}
+
+.pannkuzu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: inline;
+    /*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;
+    /*太字*/
+}
+
+.breadcrumb li:after {
+    /* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+}
+
+.breadcrumb li:last-child:after {
+    content: '';
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #52b5ee;
+    /*色*/
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/* ========================== */
+/* header/footer
+/* ========================== */
+header,
+footer {
+    color: #FFFFFF;
+    background-color: #669900;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: #FFFFFF;
+}
+
+.header-logo {
+    margin-top: 1rem;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.header-nav ul.flex-all-row li {
+    width: 50%;
+    margin-top: 0.5rem;
+}
+
+/* ========================== */
+/* main
+/* ========================== */
+
+.firstview {
+    background-image: url("images/top@2x-50.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 360px;
+}
+
+.firstview-lead {
+    width: 182px;
+}
+
+.firstview-title {
+    font-size: 26px;
+}
+
+/* --- 楽しいイベント --- */
+.event {
+    background-color: #DBAF23;
+}
+
+.event2 {
+    background-color: #FFFDE6;
+}
+
+/* --- card --- */
+.card-wrapper {
+    background-color: #DBAF23;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.card a {
+    color: #0071BC;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 0.5rem 0 0 0;
+}
+
+.card-description {
+    color: #808080;
+    font-size: 14px;
+}
+
+.card-footer {
+    font-size: 12px;
+}
+
+.card-author img {
+    vertical-align: middle;
+}
+
+.card-footer .card-date {
+    margin-left: auto;
+}
+
+.card2-wrapper {
+    background-color: #FFFDE6;
+    padding: 2rem;
+}
+
+.card2 {
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.card2 a {
+    color: #0071BC;
+}
+
+.card2 h3 {
+    font-size: 24px;
+    margin: 0.5rem 0 0 0;
+}
+
+.card2-description {
+    color: #808080;
+    font-size: 14px;
+}
+
+.card2-footer {
+    font-size: 12px;
+}
+
+.card2-author img {
+    vertical-align: middle;
+}
+
+.card2-footer .card2-date {
+    margin-left: auto;
+}
+
+.breadcrumb {
+    background: #FFFDE6;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+}
+
+/* --- xx動物園 ---*/
+.about {
+    background-color: #FFFDE6;
+}
+
+.about-image,
+.about-description {
+    margin: 1.5rem auto;
+}
+
+.about-image {
+    max-width: 420px;
+}
+
+.about-image img {
+    vertical-align: bottom;
+}
+
+/* --- お知らせ ---*/
+.info {
+    background-color: #DBAF23;
+}
+
+.info-wrapper {
+    max-width: 860px;
+    margin: 3rem auto 0;
+}
+
+.info-wrapper article {
+    padding: 0.75rem 0;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+.info-date {
+    font-size: 14px;
+}
+
+h3.info-title {
+    font-size: 16px;
+}
+
+.info2 {
+    background-color: #FFFDE6;
+}
+
+.info2-wrapper {
+    max-width: 860px;
+    margin: 3rem auto 0;
+}
+
+.info2-wrapper article {
+    padding: 0.75rem 0;
+    border-bottom: solid 1px #CCCCCC;
+}
+
+.info2-date {
+    font-size: 14px;
+}
+
+h3.info2-title {
+    font-size: 16px;
+}
+
+/* -------------------------------------------- */
+/*  ▼ タブレット以上の場合に適用するCSS ▼
+/* -------------------------------------------- */
+@media (min-width: 600px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .header-nav {
+        margin-left: auto;
+    }
+
+    .header-logo {
+        margin-bottom: 0;
+    }
+
+    .header-nav ul.flex-all-row li {
+        width: auto;
+        margin-top: 0;
+        margin-left: 2em;
+    }
+
+    .firstview {
+        min-height: 506px;
+    }
+
+    .firstview-lead {
+        width: 320px;
+        font-size: 18px;
+    }
+
+    .firstview-title {
+        font-size: 42px;
+    }
+
+    .firstview-lead a.btn-more {
+        font-size: 21px;
+    }
+
+    .card-container {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .card-wrapper {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-wrapper .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card2-container {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .card2-wrapper {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card2-wrapper .card2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-description {
+        width: 85%;
+    }
+
+    .info-wrapper article {
+        padding: 1rem 0;
+    }
+
+    .info-date {
+        font-size: 16px;
+        width: 9em;
+    }
+
+    h3.info-title {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    .info2-wrapper article {
+        padding: 1rem 0;
+    }
+
+    .info2-date {
+        font-size: 16px;
+        width: 9em;
+    }
+
+    h3.info2-title {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+/* -------------------------------------------- */
+/*  ▼PCの場合に適用するCSS ▼
+/* -------------------------------------------- */
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .firstview {
+        background-image: url('images/top@2x-50.jpg');
+        min-height: 706px;
+    }
+
+    .firstview-lead {
+        width: 420px;
+        margin-left: 150px;
+        font-size: 21px;
+    }
+
+    .firstview-title {
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+
+    .card-wrapper {
+        width: 25%;
+    }
+
+    .about-description {
+        flex: 1;
+        padding-left: 3rem;
+    }
+
+    .card2-wrapper {
+        width: 25%;
+    }
+}
